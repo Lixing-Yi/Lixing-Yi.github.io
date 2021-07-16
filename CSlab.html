@@ -4,20 +4,32 @@
   <div class="cal">
   <p>Here's an buggy search page &#8595 <span style="color:#9c9897;">Just type in the box and click!</span></p>
   <input id="item1" maxlength="30" type="text" placeholder="Type here"/>
-  <button id="search" type="button">Search</button>
+  <button id="search1" type="button">Search</button>
   <br />
   <p>更新2.2 如果在中国国内，请使用这里 &#8595</p>
+  <input id="item2" maxlength="30" type="text" placeholder="Type here"/>
+  <button id="search2" type="button">搜索</button>
+  <br />
   
   <script>
-    document.getElementById("search").addEventListener("click", function() {
+    document.getElementById("search1").addEventListener("click", function() {
       var txt1=document.getElementById("item1").value;
       if(txt1.length){
         var str = "https://www.google.com/search?q="+txt1;
         var uri = encodeURI(str);
-        window.open(uri);
-        
+        window.open(uri)；
       }
     });
+    
+    document.getElementById("search2").addEventListener("click", function() {
+      var txt1=document.getElementById("item2").value;
+      if(txt1.length){
+        var str = "http://www.baidu.com/s?wd="+txt1;
+        var uri = encodeURI(str);
+        window.open(uri)；
+      }
+    });
+    
   </script>
 </div>
 </html>
