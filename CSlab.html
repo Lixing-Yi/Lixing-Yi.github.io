@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html>
-  what the heck<br />
+  <br />
   <div class="cal">
-  <p>You should try this &#8595 <span style="color:#9c9897;">Just type in the box and click!</span></p>
-  <input id="aName" maxlength="30" type="text" placeholder="Type here"/>
-  <button id="says" type="button">Search</button>
+  <p>Here's an buggy search page &#8595 <span style="color:#9c9897;">Just type in the box and click!</span></p>
+  <input id="item1" maxlength="30" type="text" placeholder="Type here"/>
+  <button id="search" type="button">Search</button>
+  <br />
+  <p>如果在中国国内，请使用这里 &#8595</p>
+  
   <script>
-    document.getElementById("says").addEventListener("click", function() {
-      var name=document.getElementById("aName").value;
+    document.getElementById("search").addEventListener("click", function() {
+      var name=document.getElementById("item1").value;
       if(name.length){
-        alert("Are you sure you want to search "+name+"?");
+        var link = "https://www.google.com/search?q=google+search+algorithm"；
+        window.open(link);
         
       }
     });
-
   </script>
 </div>
 </html>
