@@ -15,13 +15,20 @@
     document.getElementById("search1").addEventListener("click", function() {
       var txt1=document.getElementById("item1").value;
       if(txt1.length){
-        var str = "https://www.google.com/search?q="+txt1;
-        var uri = encodeURI(str);
-        window.open(uri)；
+        var str1 = "https://www.google.com/search?q="+txt1;
+        var uri1 = encodeURI(str1);
+        window.open(uri1)；
       }
     });
     
-    
+    document.getElementById("search2").addEventListener("click", function() {
+      var txt1=document.getElementById("item2").value;
+      if(txt1.length){
+        var str2 = "http://www.baidu.com/s?wd="+txt1;
+        var uri2 = encodeURI(str2);
+        window.open(uri2)；
+      }
+    });    
     
   </script>
 </div>
