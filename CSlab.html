@@ -6,14 +6,14 @@
   <input id="item1" maxlength="30" type="text" placeholder="Type here"/>
   <button id="search" type="button">Search</button>
   <br />
-  <p>更新2 如果在中国国内，请使用这里 &#8595</p>
+  <p>更新2.1 如果在中国国内，请使用这里 &#8595</p>
   
   <script>
     document.getElementById("search").addEventListener("click", function() {
       var txt1=document.getElementById("item1").value;
       if(txt1.length){
         <a id="link"></a>
-        document.getElementById("link").setAttribute("href","https://www.google.com/search?q="+txt1);
+        document.getElementById("link").setAttribute("href","https://www.google.com");
         window.open(document.getElementById("link"));
         
       }
