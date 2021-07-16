@@ -1,6 +1,21 @@
 <!DOCTYPE html>
 <html>
-  what the heck
+  what the heck<br />
+  <div class="cal">
+  <p>You should try this &#8595 <span style="color:#9c9897;">Just type in the box and click!</span></p>
+  <input id="aName" maxlength="30" type="text" placeholder="Type here"/>
+  <button id="says" type="button">Search</button>
+  <script>
+    document.getElementById("says").addEventListener("click", function() {
+      var name=document.getElementById("aName").value;
+      if(name.length){
+        alert("Are you sure you want to search "+name+"?");
+        
+      }
+    });
+
+  </script>
+</div>
 </html>
 
 
