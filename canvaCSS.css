@@ -31,11 +31,11 @@
 }
 
 .shine {
-  animation: fade ease 2s infinite;
-  -webkit-animation: fade ease 2s infinite;
-  -moz-animation: fade ease 2s infinite;
-  -o-animation: fade ease 2s infinite;
-  -ms-animation: fade ease 2s infinite;
+  animation: fade 2s infinite;
+  -webkit-animation: fade 2s infinite;
+  -moz-animation: fade 2s infinite;
+  -o-animation: fade 2s infinite;
+  -ms-animation: fade 2s infinite;
 }
 @keyframes fade {
   0% { opacity:0.9; }
