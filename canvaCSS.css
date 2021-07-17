@@ -9,6 +9,7 @@
   position: absolute;
   transform: translate(-50%,-50%);
   pointer-events: none;
+  z-index: 2;
 }
 
  body {
@@ -24,6 +25,7 @@
   position: absolute;
   right: 10%;
   top: 10%;
+  z-index: 1;
 }
 
 .circle {
