@@ -6,14 +6,13 @@
   <input id="item1" maxlength="30" type="text" placeholder="Type here"/>
   <button id="search1" type="button">Search</button>
   <br />
-  <p>更新2.2.2 如果在中国国内，请使用这里 &#8595</p>
+  <p>更新2.2.2.1 如果在中国国内，请使用这里 &#8595</p>
   <input id="item2" maxlength="30" type="text" placeholder="Type here"/>
   <button id="search2" type="button">搜索</button>
   <br />
-  <button id="search3" type="button">testing</button>
-    
   <script>
     document.getElementById("search1").addEventListener("click", function() {
+      alert(“listen”)；
       var txt1=document.getElementById("item1").value;
       if(txt1.length){
         var str1 = "https://www.google.com/search?q="+txt1;
@@ -22,11 +21,8 @@
         document.getElementById("butt1").click()；
       }
     });
-    
-    document.getElementById("search3").addEventListener("click", function() {
-      alert(“listen”)；
-    });    
-    
+  </script>
+  <script>
     document.getElementById("search2").addEventListener("click", function() {
       var txt1=document.getElementById("item2").value;
       if(txt1.length){
@@ -35,8 +31,7 @@
         window.open(uri2)；
       }
     });    
-    
-  </script>
+   </script> 
 </div>
 </html>
 
