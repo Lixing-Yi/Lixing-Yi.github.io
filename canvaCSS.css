@@ -27,7 +27,7 @@
 }
 
 .circle {
-  animation: spin 6s infinite;
+  animation: spin 9s linear infinite;
 }
 @keyframes spin {
   from {
