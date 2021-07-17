@@ -11,7 +11,7 @@
 }
 
  body {
-  background-image: uri('https://lixing-yi.github.io/background.jpg');
+  background-image: url('https://lixing-yi.github.io/background.jpg');
   color: blue;
   cursor: auto;
 }
