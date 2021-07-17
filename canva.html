@@ -27,7 +27,19 @@
   </audio>
 </div>
 <div class="relativeRight">
-  <img src="https://lixing-yi.github.io/moon.png" alt="moon" width="50" height="50">
+  <img id="moon" src="https://lixing-yi.github.io/moon.png" alt="moon" width="70" height="70">
+  <script>
+    let moonPic = document.querySelector("#moon");
+    let still = true;
+    moonPic.addEventListener("click", () => {
+    if(still) {
+      moonPic.classList.add("circle");
+    }else{
+      moonPic.classList.remove("circle");
+    }
+    still = !still;
+  });
+  </script>
 </div>
 </body>
 </html>
