@@ -10,7 +10,8 @@
   <input id="item2" maxlength="30" type="text" placeholder="Type here"/>
   <button id="search2" type="button">搜索</button>
   <br />
-  
+  <button id="search3" type="button">testing</button>
+    
   <script>
     document.getElementById("search1").addEventListener("click", function() {
       var txt1=document.getElementById("item1").value;
@@ -21,6 +22,10 @@
         document.getElementById("butt1").click()；
       }
     });
+    
+    document.getElementById("search3").addEventListener("click", function() {
+      alert(“listen”)；
+    });    
     
     document.getElementById("search2").addEventListener("click", function() {
       var txt1=document.getElementById("item2").value;
