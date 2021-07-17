@@ -4,6 +4,14 @@
 <link href="https://lixing-yi.github.io/canvaCSS.css" rel="stylesheet"/>
 </head>
 <body>
-<div class="cursor"></div>
+<div class="cursor">
+<script>
+  let mouseCursor = document.querySelector(".cursor");
+  window.addEventListener("mousemove", function(e) {
+    mouseCursor.style.top=e.pageY+"px";
+    mouseCursor.style.left=e.pageX+"px";
+  });
+</script>
+</div>
 </body>
 </html>
