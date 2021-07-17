@@ -2,33 +2,35 @@
 <html>
   <br />
   <div class="cal">
+    
   <p>Here's an buggy search page &#8595 <span style="color:#9c9897;">Just type in the box and click!</span></p>
+  
   <input id="item1" maxlength="30" type="text" placeholder="Type here"/>
   <button id="search1" type="button">Search</button>
     <script>
     document.getElementById("search1").addEventListener("click", function() {
-      var txt1=document.getElementById("item1").value;
-      if(txt1.length){
-        var str1 = "https://www.google.com/search?q="+txt1;
-        var uri1 = encodeURI(str1);
-        <a id = "butt1" target="_blank" rel="noopener noreferrer" href=uri1/>
-        document.getElementById("butt1").click()；
+      alert("yes");
+      var txt=document.getElementById("item1").value;
+      if(txt.length){
+        var str = "https://www.google.com/search?q="+txt;
+        var uri = encodeURI(str);
+        window.open(uri)；
       }
     });
   </script>
   <br />
-  <p>更新2.2.2.4 如果在中国国内，请使用这里 &#8595</p>
-  <input id="item2" maxlength="30" type="text" placeholder="Type here"/>
   
+  <p>更新2.2.2.5 如果在中国国内，请使用这里 &#8595</p>
+  <input id="item2" maxlength="30" type="text" placeholder="Type here"/>
   <button id="search2" type="button">搜索</button>
   <script>
     document.getElementById("search2").addEventListener("click", function() {
       alert("yes");
-      var txt1=document.getElementById("item2").value;
-      if(txt1.length){
-        var str2 = "http://www.baidu.com/s?wd="+txt1;
-        var uri2 = encodeURI(str2);
-        window.open(uri2)；
+      var txt=document.getElementById("item2").value;
+      if(txt.length){
+        var str = "https://www.google.com/search?q="+txt;
+        var uri = encodeURI(str);
+        window.open(uri)；
       }
     });    
    </script> 
