@@ -11,10 +11,6 @@
   pointer-events: none;
 }
 
-.mouseDown {
-  border: 7px solid white;
-}
-
  body {
   background-image: url('https://lixing-yi.github.io/background.jpg');
   color: blue;
@@ -30,6 +26,7 @@
 }
 
 .shine {
+  border: 7px solid white;
   animation: fade 2s infinite;
   -webkit-animation: fade 2s infinite;
   -moz-animation: fade 2s infinite;
