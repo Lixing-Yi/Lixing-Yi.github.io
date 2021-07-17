@@ -26,6 +26,17 @@
   top: 10%;
 }
 
+.circle {
+  animation: spin 6s infinite;
+}
+@keyframes spin {
+  from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
 .shine {
   border: 7px solid white;
   animation: fade 2s infinite;
