@@ -17,12 +17,13 @@
     });
   </script>
   <br />
-  <p>更新2.2.2.3 如果在中国国内，请使用这里 &#8595</p>
+  <p>更新2.2.2.4 如果在中国国内，请使用这里 &#8595</p>
   <input id="item2" maxlength="30" type="text" placeholder="Type here"/>
   
   <button id="search2" type="button">搜索</button>
   <script>
     document.getElementById("search2").addEventListener("click", function() {
+      alert("yes");
       var txt1=document.getElementById("item2").value;
       if(txt1.length){
         var str2 = "http://www.baidu.com/s?wd="+txt1;
