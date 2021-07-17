@@ -5,18 +5,7 @@
   <p>Here's an buggy search page &#8595 <span style="color:#9c9897;">Just type in the box and click!</span></p>
   <input id="item1" maxlength="30" type="text" placeholder="Type here"/>
   <button id="search1" type="button">Search</button>
-  <br />
-  <p>更新2.2.2.3 如果在中国国内，请使用这里 &#8595</p>
-  <input id="item2" maxlength="30" type="text" placeholder="Type here"/>
-  <button id="search2" type="button">搜索</button>
-  <button id="k" type="button">testing</button>
-  <script>
-  document.getElementById("k").addEventListener("click", function() {
-      alert("yes");
-    });
-  </script>
-  <br />
-  <script>
+    <script>
     document.getElementById("search1").addEventListener("click", function() {
       var txt1=document.getElementById("item1").value;
       if(txt1.length){
@@ -27,6 +16,11 @@
       }
     });
   </script>
+  <br />
+  <p>更新2.2.2.3 如果在中国国内，请使用这里 &#8595</p>
+  <input id="item2" maxlength="30" type="text" placeholder="Type here"/>
+  
+  <button id="search2" type="button">搜索</button>
   <script>
     document.getElementById("search2").addEventListener("click", function() {
       var txt1=document.getElementById("item2").value;
@@ -37,6 +31,16 @@
       }
     });    
    </script> 
+    
+  <button id="k" type="button">testing</button>
+  <script>
+  document.getElementById("k").addEventListener("click", function() {
+      alert("yes");
+    });
+  </script>
+  <br />
+    
+  
 </div>
 </html>
 
