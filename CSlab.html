@@ -3,7 +3,7 @@
   <br />
   <div class="cal">
     
-  <p>Here's an buggy search page &#8595 <span style="color:#9c9897;">Just type in the box and click!</span></p>
+  <p>Here's an buggy search page &#8595 (Version 2.0) <span style="color:#9c9897;">Just type in the box and click!</span></p>
   
   <input id="item1" maxlength="30" type="text" placeholder="Type here"/>
   <button id="search1" type="button">Search</button>
@@ -14,13 +14,13 @@
       if(txt.length){
         var str = "https://www.google.com/search?q="+txt;
         var uri = encodeURI(str);
-        window.open(uri)；
+        window.open(uri);
       }
     });
   </script>
   <br />
   
-  <p>更新2.2.2.5 如果在中国国内，请使用这里 &#8595</p>
+  <p>如果在中国国内，请使用这里 &#8595</p>
   <input id="item2" maxlength="30" type="text" placeholder="Type here"/>
   <button id="search2" type="button">搜索</button>
   <script>
@@ -30,20 +30,11 @@
       if(txt.length){
         var str = "https://www.google.com/search?q="+txt;
         var uri = encodeURI(str);
-        window.open(uri)；
+        window.open(uri);
       }
     });    
    </script> 
-    
-  <button id="k" type="button">testing</button>
-  <script>
-  document.getElementById("k").addEventListener("click", function() {
-      alert("yes");
-    });
-  </script>
-  <br />
-    
-  
+
 </div>
 </html>
 
