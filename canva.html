@@ -11,6 +11,14 @@
     mouseCursor.style.top=e.pageY+"px";
     mouseCursor.style.left=e.pageX+"px";
   });
+  
+  window.addEventListener("mousedown", () => {
+    mouseCursor.classList.add("mouse-down");   
+  });
+  
+  window.addEventListener("mouseup", () => {
+    mouseCursor.classList.remove("mouse-down");   
+  });
 </script>
 </div>
 </body>
