@@ -24,3 +24,8 @@
  * {
   cursor: none;
 }
+
+.relativeRight {
+  position: relative;
+  right: 30px;
+}
