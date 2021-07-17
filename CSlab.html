@@ -10,13 +10,13 @@
   <input id="item2" maxlength="30" type="text" placeholder="Type here"/>
   <button id="search2" type="button">搜索</button>
   <button id="k" type="button">testing</button>
+  <script>
+  document.getElementById("k").addEventListener("click", function() {
+      alert("yes");
+    });
+  </script>
   <br />
   <script>
-    
-    document.getElementById("k").addEventListener("click", function() {
-      alert("listen")；
-    });
-    
     document.getElementById("search1").addEventListener("click", function() {
       var txt1=document.getElementById("item1").value;
       if(txt1.length){
