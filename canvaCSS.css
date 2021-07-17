@@ -14,5 +14,8 @@
  body {
   background-image: url('https://lixing-yi.github.io/background.jpg');
   color: blue;
+}
+
+ * {
   cursor: none;
 }
