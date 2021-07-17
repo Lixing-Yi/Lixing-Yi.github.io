@@ -26,6 +26,6 @@
 }
 
 .relativeRight {
-  position: relative;
-  right: 0;
+  position: absolute;
+  right: 20;
 }
