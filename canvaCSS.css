@@ -22,7 +22,8 @@
 
 .relativeRight {
   position: absolute;
-  right: 20px;
+  right: 10%;
+  top: 10%;
 }
 
 .shine {
