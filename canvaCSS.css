@@ -11,6 +11,11 @@
   pointer-events: none;
 }
 
+.mouseDown {
+  border: 7px solid white;
+  opacity: 0.9;
+}
+
  body {
   background-image: url('https://lixing-yi.github.io/background.jpg');
   color: blue;
