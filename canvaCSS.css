@@ -38,30 +38,30 @@
 }
 @keyframes fade {
   0% { opacity:0.9; }
-  50% { opacity: 0.2; }
+  50% { opacity: 0; }
   100% { opacity:0.9; }
 }
 
 @-moz-keyframes fade {
    0% { opacity:0.9; }
-  50% { opacity: 0.2; }
+  50% { opacity: 0; }
   100% { opacity:0.9; }
 }
 
 @-webkit-keyframes fade {
   0% { opacity:0.9; }
-  50% { opacity: 0.2; }
+  50% { opacity: 0; }
   100% { opacity:0.9; }
 }
 
 @-o-keyframes fade {
   0% { opacity:0.9; }
-  50% { opacity: 0.2; }
+  50% { opacity: 0; }
   100% { opacity:0.9; }
 }
 
 @-ms-keyframes fade {
   0% { opacity:0.9;}
-  50% { opacity: 0.2; }
+  50% { opacity: 0; }
   100% { opacity:0.9;}
 
