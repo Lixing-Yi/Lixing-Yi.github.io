@@ -23,7 +23,9 @@
   transform: translate(-50%,-50%);
   pointer-events: none;
   z-index: 0;
-  animation: haloFade 1s linear infinite;
+}
+.haloA {
+  animation: haloFade 1s linear 1;
 }
 @keyframes haloFade {
   from { height: 20px; width: 20px; opacity:0.6; color: rgb(200,200,244);}
