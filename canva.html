@@ -28,41 +28,43 @@
   let halo3 = document.querySelector("#halo3");
   let halo4 = document.querySelector("#halo4");
   
-  document.onmousemove = function(e) {
-    window.mouseX = e.pageX;
-    window.mouseY = e.pageY;
-  }
+  var mouseY =0;
+  var mouseX =0;
+  
+  window.addEventListener("mousemove", function(e) {
+    mouseY =e.pageY+"px";
+    mouseX =e.pageX+"px";
+  });
   
   function mousemov(){
-    
-      star0.style.top=window.mouseY;
-      star0.style.left=window.mouseX;
-      halo0.style.top=window.mouseY;
-      halo0.style.left=window.mouseX;
+      star0.style.top=mouseY;
+      star0.style.left=mouseX;
+      halo0.style.top=mouseY;
+      halo0.style.left=mouseX;
    
     setTimeout(() => {
-      star1.style.top=window.mouseY;
-      star1.style.left=window.mouseX;
-      halo1.style.top=window.mouseY;
-      halo1.style.left=window.mouseX;
+      star1.style.top=mouseY;
+      star1.style.left=mouseX;
+      halo1.style.top=mouseY;
+      halo1.style.left=mouseX;
     },200);
     setTimeout(() => {
-      star2.style.top=window.mouseY;
-      star2.style.left=window.mouseX;
-      halo2.style.top=window.mouseY;
-      halo2.style.left=window.mouseX;
+      star2.style.top=mouseY;
+      star2.style.left=mouseX;
+      halo2.style.top=mouseY;
+      halo2.style.left=mouseX;
     },400);
     setTimeout(() => {
-      star3.style.top=window.mouseY;
-      star3.style.left=window.mouseX;
-      halo3.style.top=window.mouseY;
-      halo3.style.left=window.mouseX;
+      star3.style.top=mouseY;
+      star3.style.left=mouseX;
+      halo3.style.top=mouseY;
+      halo3.style.left=mouseX;
     },600);
     setTimeout(() => {
-      star4.style.top=window.mouseY;
-      star4.style.left=window.mouseX;
-      halo4.style.top=window.mouseY;
-      halo4.style.left=window.mouseX;
+      star4.style.top=mouseY;
+      star4.style.left=mouseX;
+      halo4.style.top=mouseY;
+      halo4.style.left=mouseX;
     },800);
  }  
  window.onload = function() {
