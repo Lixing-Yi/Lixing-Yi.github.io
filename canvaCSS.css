@@ -23,8 +23,6 @@
   transform: translate(-50%,-50%);
   pointer-events: none;
   z-index: 0;
-}
-.haloA {
   animation: haloFade 1s linear infinite;
 }
 @keyframes haloFade {
@@ -43,8 +41,6 @@
   transform: translate(-50%,-50%);
   pointer-events: none;
   z-index: 1;
-}
-.starA {
   animation: starFade 1s linear infinite;
 }
 @keyframes starFade {
