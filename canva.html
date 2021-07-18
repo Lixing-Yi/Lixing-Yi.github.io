@@ -29,16 +29,11 @@
     x=e.pageX+"px";
   });
   function mousemov(){
-    /*
-    star0.classList.remove("starA");
-    halo0.classList.remove("haloA");*/
     star0.style.top=y;
     star0.style.left=x;
     halo0.style.top=y;  
     halo0.style.left=x;
-    star0.classList.add("starA");
-    halo0.classList.add("haloA");
-      
+          
    /*
    <span id ="star1" class="star"/>
   <span id ="star2" class="star"/>
@@ -77,7 +72,9 @@
     */
  }  
  window.onload = function() {
-    setInterval(mousemov, 1000);
+   star0.classList.add("starA");
+   halo0.classList.add("haloA"); 
+   setInterval(mousemov, 1000);
  } 
   
 </script>
