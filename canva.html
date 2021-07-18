@@ -29,8 +29,8 @@
     y=e.pageY+"px";
     x=e.pageX+"px";
   });
-  function mousemov(){
-    console.log(1);
+  function mousemov(s){
+    console.log(s);
     /* document.findElementById(s).style.top=y;
     document.findElementById(s).style.left=x;
     document.findElementById(h).style.top=y;  
@@ -72,7 +72,7 @@
  
    star0.classList.add("starA");
    halo0.classList.add("haloA"); 
-   setInterval(mousemov, 1000);
+   setInterval(function() {mousemov("nice");}, 1000);
   
 </script>
 <div class="cursor">
