@@ -20,7 +20,7 @@
   border-radius: 50%;
   display: inline-block;
   position: absolute;
-  transform: translate(-50%,-50%);
+  /*transform: translate(-50%,-50%);*/
   pointer-events: none;
   z-index: 0;
   animation: haloFade 1s linear infinite;
