@@ -4,8 +4,40 @@
 <link href="https://lixing-yi.github.io/canvaCSS.css" rel="stylesheet"/>
 </head>
 <body>
-<div class="halo"></div>
-<div class="star"></div>
+<div>
+  <span id ="star0" class="star"/>
+  <span id ="star1" class="star"/>
+  <span id ="star2" class="star"/>
+  <span id ="star3" class="star"/>
+  <span id ="star4" class="star"/>
+  <span id ="halo0" class="halo"/>
+  <span id ="halo1" class="halo"/>
+  <span id ="halo2" class="halo"/>
+  <span id ="halo3" class="halo"/>
+  <span id ="halo4" class="halo"/>
+</div>
+<script>
+  let star0 = document.querySelector("#star0");
+  let star1 = document.querySelector("#star1");
+  let star2 = document.querySelector("#star2");
+  let star3 = document.querySelector("#star3");
+  let star4 = document.querySelector("#star4");
+  let halo0 = document.querySelector("#halo0");
+  let halo1 = document.querySelector("#halo1");
+  let halo2 = document.querySelector("#halo2");
+  let halo3 = document.querySelector("#halo3");
+  let halo4 = document.querySelector("#halo4");
+  window.addEventListener("mousemove", function(e) {
+    setInterval(() => {
+      star0.style.top=e.pageY+"px";
+      star0.style.left=e.pageX+"px";
+      halo0.style.top=e.pageY+"px";
+      halo0.style.left=e.pageY+"px";
+    },1000);
+    
+    
+  });
+</script>
 <div class="cursor">
 <script>
   let mouseCursor = document.querySelector(".cursor");
