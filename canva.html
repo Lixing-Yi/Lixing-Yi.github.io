@@ -6,15 +6,9 @@
 <body>
 <div>
   <span id ="star0" class="star"/>
-  <span id ="star1" class="star"/>
-  <span id ="star2" class="star"/>
-  <span id ="star3" class="star"/>
-  <span id ="star4" class="star"/>
+  
   <span id ="halo0" class="halo"/>
-  <span id ="halo1" class="halo"/>
-  <span id ="halo2" class="halo"/>
-  <span id ="halo3" class="halo"/>
-  <span id ="halo4" class="halo"/>
+  
 </div>
 <script>
   let star0 = document.querySelector("#star0");
@@ -31,9 +25,19 @@
   function mousemov(){
       star0.style.top=mouseCursor.style.top;
       star0.style.left=mouseCursor.style.left;
-      halo0.style.top=star0.style.top;
-      halo0.style.left=star0.style.left;
+      halo0.style.top=mouseCursor.style.top;
+      halo0.style.left=mouseCursor.style.left;
    /*
+   <span id ="star1" class="star"/>
+  <span id ="star2" class="star"/>
+  <span id ="star3" class="star"/>
+  <span id ="star4" class="star"/>
+  
+  <span id ="halo1" class="halo"/>
+  <span id ="halo2" class="halo"/>
+  <span id ="halo3" class="halo"/>
+  <span id ="halo4" class="halo"/>
+  
     setTimeout(() => {
       star1.style.top=mouseY;
       star1.style.left=mouseX;
