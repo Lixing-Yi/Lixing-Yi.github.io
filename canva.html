@@ -29,12 +29,11 @@
     y=e.pageY+"px";
     x=e.pageX+"px";
   });
-  function mousemov(s){
-    console.log(s);
-    /* document.findElementById(s).style.top=y;
-    document.findElementById(s).style.left=x;
-    document.findElementById(h).style.top=y;  
-    document.findElementById(h).style.left=x;*/
+  function mousemov(s,h){
+    s.style.top=y;
+    s.style.left=x;
+    h.style.top=y;  
+    h.style.left=x;
           
    /*
   <span id ="star3" class="star"/>
@@ -72,7 +71,7 @@
  
    star0.classList.add("starA");
    halo0.classList.add("haloA"); 
-   setInterval(function() {mousemov("nice");}, 1000);
+   setInterval(function() {mousemov(star0,halo0);}, 1000);
   
 </script>
 <div class="cursor">
