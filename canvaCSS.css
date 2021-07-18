@@ -30,7 +30,7 @@
 @keyframes haloFade {
   0% { height: 20px; width: 20px; opacity:0.5; color: rgb(200,200,244);}
   80% {opacity:0;}
-  100% {height: 30px; width: 30px; opacity: 0; color: rgb(0,0,0);}
+  100% {height: 35px; width: 35px; opacity: 0; color: rgb(0,0,0);}
 }
 
 .star {
