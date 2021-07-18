@@ -20,14 +20,14 @@
   border-radius: 50%;
   display: inline-block;
   position: absolute;
-  /*transform: translate(-50%,-50%);*/
+  transform: translate(-50%,-50%);
   pointer-events: none;
   z-index: 0;
   animation: haloFade 1s linear infinite;
 }
 @keyframes haloFade {
-  from { height: 20px; width: 20px; opacity:0.6; color: rgb(200,200,244);}
-  to {  height: 30px; width: 30px; opacity: 0; color: rgb(0,0,0);}
+  from { transform: translate(-50%,-50%); height: 20px; width: 20px; opacity:0.6; color: rgb(200,200,244);}
+  to {  transform: translate(-50%,-50%); height: 30px; width: 30px; opacity: 0; color: rgb(0,0,0);}
 }
 
 .star {
