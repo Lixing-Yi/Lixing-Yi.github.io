@@ -28,19 +28,11 @@
   let halo3 = document.querySelector("#halo3");
   let halo4 = document.querySelector("#halo4");
   
-  var mouseY =0;
-  var mouseX =0;
-  
-  window.addEventListener("mousemove", function(e) {
-    mouseY =e.pageY+"px";
-    mouseX =e.pageX+"px";
-  });
-  
   function mousemov(){
-      star0.style.top=mouseY;
-      star0.style.left=mouseX;
-      halo0.style.top=mouseY;
-      halo0.style.left=mouseX;
+      star0.style.top=mouseCursor.style.top;
+      star0.style.left=mouseCursor.style.left;
+      halo0.style.top=mouseCursor.style.top;
+      halo0.style.left=mouseCursor.style.left;
    /*
     setTimeout(() => {
       star1.style.top=mouseY;
@@ -75,7 +67,7 @@
 </script>
 <div class="cursor">
 <script>
-  let mouseCursor = document.querySelector(".cursor");
+  var mouseCursor = document.querySelector(".cursor");
   window.addEventListener("mousemove", function(e) {
     mouseCursor.style.top=e.pageY+"px";
     mouseCursor.style.left=e.pageX+"px";
