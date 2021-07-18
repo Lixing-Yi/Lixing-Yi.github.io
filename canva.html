@@ -29,11 +29,11 @@
     y=e.pageY+"px";
     x=e.pageX+"px";
   });
-  function mousemov(){
-    star0.style.top=y;
-    star0.style.left=x;
-    halo0.style.top=y;  
-    halo0.style.left=x;
+  function mousemov(s,h){
+    s.style.top=y;
+    s.style.left=x;
+    h.style.top=y;  
+    h.style.left=x;
           
    /*
   <span id ="star3" class="star"/>
@@ -71,7 +71,7 @@
  window.onload = function() {
    star0.classList.add("starA");
    halo0.classList.add("haloA"); 
-   setInterval(mousemov, 1000);
+   setInterval(mousemov(star0,halo0), 1000);
  } 
   
 </script>
