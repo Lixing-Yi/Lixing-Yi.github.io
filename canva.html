@@ -28,12 +28,12 @@
   let halo3 = document.querySelector("#halo3");
   let halo4 = document.querySelector("#halo4");
   window.addEventListener("mousemove", function(e) {
-    setTimeout(() => {
+    
       star0.style.top=e.pageY+"px";
       star0.style.left=e.pageX+"px";
       halo0.style.top=e.pageY+"px";
       halo0.style.left=e.pageY+"px";
-    },200);
+   
     setTimeout(() => {
       star1.style.top=e.pageY+"px";
       star1.style.left=e.pageX+"px";
@@ -45,19 +45,19 @@
       star2.style.left=e.pageX+"px";
       halo2.style.top=e.pageY+"px";
       halo2.style.left=e.pageY+"px";
-    },200);
+    },400);
     setTimeout(() => {
       star3.style.top=e.pageY+"px";
       star3.style.left=e.pageX+"px";
       halo3.style.top=e.pageY+"px";
       halo3.style.left=e.pageY+"px";
-    },200);
+    },600);
     setTimeout(() => {
       star4.style.top=e.pageY+"px";
       star4.style.left=e.pageX+"px";
       halo4.style.top=e.pageY+"px";
       halo4.style.left=e.pageY+"px";
-    },200);
+    },800);
     
   });
 </script>
