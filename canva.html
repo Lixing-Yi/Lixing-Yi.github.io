@@ -58,10 +58,15 @@
   function mousemov(s,h){
     s.style.top=y;
     s.style.left=x;
-    s.style.animation="starFade 1s linear infinite";
+    s.classList.remove("starA");
+    void element.offsetWidth;//the magic line
+    s.classList.add("starA");
     h.style.top=y;  
     h.style.left=x;
-    h.style.animation="haloFade 1s linear infinite";
+    h.classList.remove("haloA");
+    void element.offsetWidth;//the magic line
+    h.classList.add("haloA");
+    //h.style.animation="haloFade 1s linear infinite";
   }  
  
    setInterval(function() {mousemov(star0,halo0);}, 1000);
