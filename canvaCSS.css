@@ -18,13 +18,14 @@
   width: 20px;
   background-color: #c8c8f4;
   border-radius: 50%;
-  display: inline-block;
+  display: none;
   position: absolute;
   transform: translate(-50%,-50%);
   pointer-events: none;
   z-index: 0;
 }
 .haloA {
+  display: inline-block;
   animation: haloFade 1s linear infinite;
 }
 @keyframes haloFade {
@@ -38,13 +39,14 @@
   width: 10px;
   background-color: #c8c8f4;
   border-radius: 50%;
-  display: inline-block;
+  display: none;
   position: absolute;
   transform: translate(-50%,-50%);
   pointer-events: none;
   z-index: 1;
 }
 .starA {
+  display: inline-block;
   animation: starFade 1s linear infinite;
 }
 @keyframes starFade {
