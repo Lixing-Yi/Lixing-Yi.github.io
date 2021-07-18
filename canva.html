@@ -92,7 +92,7 @@
   setTimeout(() => {
      setInterval(function() {mousemov(star9,halo9);}, 1000);
    },900);
-  
+  /*
   window.addEventListener("mousedown", () => {
     star0.classList.add("hide");
     star1.classList.add("hide");
@@ -137,7 +137,7 @@
     halo8.classList.remove("hide");
     halo9.classList.remove("hide");
   });
-    
+*/    
 </script>
 <div>
   <span id="cuss" class="cursor"/>
@@ -150,11 +150,11 @@
   });
   
   window.addEventListener("mousedown", () => {
-    mouseCursor.style.animation="fade 2s infinite";
+    mouseCursor.classList.add("shine");
   });
   
   window.addEventListener("mouseup", () => {
-    mouseCursor.style.animation=none;
+    mouseCursor.classList.remove("shine");
   });
 </script>
 <div>
