@@ -28,13 +28,36 @@
   let halo3 = document.querySelector("#halo3");
   let halo4 = document.querySelector("#halo4");
   window.addEventListener("mousemove", function(e) {
-    setInterval(() => {
+    setTimeout(() => {
       star0.style.top=e.pageY+"px";
       star0.style.left=e.pageX+"px";
       halo0.style.top=e.pageY+"px";
       halo0.style.left=e.pageY+"px";
-    },1000);
-    
+    },200);
+    setTimeout(() => {
+      star1.style.top=e.pageY+"px";
+      star1.style.left=e.pageX+"px";
+      halo1.style.top=e.pageY+"px";
+      halo1.style.left=e.pageY+"px";
+    },200);
+    setTimeout(() => {
+      star2.style.top=e.pageY+"px";
+      star2.style.left=e.pageX+"px";
+      halo2.style.top=e.pageY+"px";
+      halo2.style.left=e.pageY+"px";
+    },200);
+    setTimeout(() => {
+      star3.style.top=e.pageY+"px";
+      star3.style.left=e.pageX+"px";
+      halo3.style.top=e.pageY+"px";
+      halo3.style.left=e.pageY+"px";
+    },200);
+    setTimeout(() => {
+      star4.style.top=e.pageY+"px";
+      star4.style.left=e.pageX+"px";
+      halo4.style.top=e.pageY+"px";
+      halo4.style.left=e.pageY+"px";
+    },200);
     
   });
 </script>
