@@ -43,7 +43,9 @@
   transform: translate(-50%,-50%);
   pointer-events: none;
   z-index: 1;
-  animation: starFade 1s linear infinite;
+}
+.starA {
+  animation: starFade 1s linear 1;
 }
 @keyframes starFade {
   from {  height: 10px; width: 10px; opacity:0.6; color: rgb(200,200,244);}
