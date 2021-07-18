@@ -30,7 +30,7 @@
     x=e.pageX+"px";
   });
   function mousemov(s,h){
-    console.log(s+","+h);
+    console.log(s.style.top);
     /* document.findElementById(s).style.top=y;
     document.findElementById(s).style.left=x;
     document.findElementById(h).style.top=y;  
@@ -72,7 +72,7 @@
  window.onload = function() {
    star0.classList.add("starA");
    halo0.classList.add("haloA"); 
-   setInterval(mousemov("star0","halo0"), 1000);
+   setInterval(mousemov(star0,halo0), 1000);
  } 
   
 </script>
