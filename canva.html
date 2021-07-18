@@ -22,11 +22,17 @@
   let halo3 = document.querySelector("#halo3");
   let halo4 = document.querySelector("#halo4");
   
+  let x = 0;
+  let y = 0;
+  window.addEventListener("mousemove", function(e) {
+    x=e.pageY+"px";
+    y=e.pageX+"px";
+  });
   function mousemov(){
-      star0.style.top=mouseCursor.style.top;
-      star0.style.left=mouseCursor.style.left;
-      halo0.style.top=mouseCursor.style.top;
-      halo0.style.left=mouseCursor.style.left;
+      star0.style.top=y;halo0.style.top=y;
+      star0.style.left=x;halo0.style.left=x;
+      
+      
    /*
    <span id ="star1" class="star"/>
   <span id ="star2" class="star"/>
@@ -71,7 +77,7 @@
 </script>
 <div class="cursor">
 <script>
-  var mouseCursor = document.querySelector(".cursor");
+  let mouseCursor = document.querySelector(".cursor");
   window.addEventListener("mousemove", function(e) {
     mouseCursor.style.top=e.pageY+"px";
     mouseCursor.style.left=e.pageX+"px";
