@@ -25,13 +25,14 @@
   let x = 0;
   let y = 0;
   window.addEventListener("mousemove", function(e) {
-    x=e.pageY+"px";
-    y=e.pageX+"px";
+    y=e.pageY+"px";
+    x=e.pageX+"px";
   });
   function mousemov(){
-      star0.style.top=y;halo0.style.top=y;
-      star0.style.left=x;halo0.style.left=x;
-      
+   /* star0.style.top=y;
+    star0.style.left=x;*/
+    halo0.style.top=y;  
+    halo0.style.left=x;
       
    /*
    <span id ="star1" class="star"/>
