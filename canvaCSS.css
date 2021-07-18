@@ -61,6 +61,10 @@
   cursor: none;
 }
 
+hide. {
+  display: none;
+}
+
 .relativeRight {
   position: absolute;
   right: 10%;
