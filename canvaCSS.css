@@ -25,7 +25,7 @@
   z-index: 0;
 }
 .haloA {
-  animation: haloFade 1s linear infinite;
+  animation: haloFade 1s linear 1;
 }
 @keyframes haloFade {
   0% { height: 20px; width: 20px; opacity:0.5; color: rgb(200,200,244);}
@@ -46,7 +46,7 @@
   z-index: 1;
 }
 .starA {
-  animation: starFade 1s linear infinite;
+  animation: starFade 1s linear 1;
 }
 @keyframes starFade {
   0% {  height: 10px; width: 10px; opacity:0.6; color: rgb(200,200,244);}
