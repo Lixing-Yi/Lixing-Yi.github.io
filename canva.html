@@ -150,11 +150,11 @@
   });
   
   window.addEventListener("mousedown", () => {
-    mouseCursor.classList.add("shine");
+    mouseCursor.style.animation="fade 2s infinite";
   });
   
   window.addEventListener("mouseup", () => {
-    mouseCursor.classList.remove("shine");
+    mouseCursor.style.animation=none;
   });
 </script>
 <div>
