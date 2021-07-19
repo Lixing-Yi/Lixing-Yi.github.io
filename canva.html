@@ -51,16 +51,16 @@
   
   let x = 0;
   let y = 0;
-  let swit=true;
+  let swit=true;// can't use switch as name lol
   window.addEventListener("mousemove", function(e) {
     y=e.pageY+"px";
     x=e.pageX+"px";
   });
-  function mousemov() {
-    star0.style.top=y;
-    star0.style.left=x;
-    halo0.style.top=y;  
-    halo0.style.left=x;/*
+  function mousemov(s,h) {
+    s.style.top=y;
+    s.style.left=x;
+    h.style.top=y;  
+    h.style.left=x;
     if(swit){ //Damned animation won't trigger twice, had to switch
       s.style.animation="starFade 1s linear 1";
       h.style.animation="haloFade 1s linear 1";
@@ -68,10 +68,10 @@
       s.style.animation="starFadeS 1s linear 1";
       h.style.animation="haloFadeS 1s linear 1";
     }
-    swit=!swit;*/
+    swit=!swit;
   }
  
-   setInterval(function() {console.log(1);}, 1000);/*
+   setInterval(function() {mousemov(star0,halo0);}, 1000);
    setTimeout(() => {
      setInterval(function() {mousemov(star1,halo1);}, 1000);
    },100);
@@ -98,7 +98,7 @@
    },800);
   setTimeout(() => {
      setInterval(function() {mousemov(star9,halo9);}, 1000);
-   },900);*/
+   },900);
   /*
   window.addEventListener("mousedown", () => {
     star0.classList.add("hide");
