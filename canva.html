@@ -139,6 +139,8 @@
   <script>
     let moonPic = document.querySelector("#moon");
     let still = true;
+    moonPic.classList.add("circle");
+    moonPic.style.animationPlayState = "paused";
     moonPic.addEventListener("click", () => {
     if(still) {
       moonPic.style.animationPlayState = "running";
