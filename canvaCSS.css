@@ -8,8 +8,8 @@
   z-index: 3;
 }
 @keyframes dark {
-  from {color: rgb(100,180,250)}
-  to {color: rgb(0,0,0)}
+  from {color: rgb(100,180,250);}
+  to {color: rgb(0,0,0);}
 }
 
 .cursor {
