@@ -58,16 +58,16 @@
     mouseCursor.style.top=y;
     mouseCursor.style.left=x;
   });
-/*
+
   window.addEventListener("mousedown", () => {
     mouseCursor.classList.add("shine");
   });
   
   window.addEventListener("mouseup", () => {
     mouseCursor.classList.remove("shine");
-  });*/
-  
-  //手写动画我容易吗 css animation FU
+  });
+  /*
+  //手写动画我容易吗 css animation FU Edit: 还tm没有用
   function star(s,time) {
     var progress = Date.now()-time;
     s.style.height = 20-Math.round(20*progress/1000) + "px";
@@ -88,22 +88,23 @@
       window.requestAnimationFrame(function() {halo(h,time);});
     }
   }
-  
+  */
   function mousemov(s,h) {
     var t=Date.now();
     s.style.top=y;
     s.style.left=x;
     h.style.top=y;  
     h.style.left=x;
-    window.requestAnimationFrame(function() {star(s,t);});
-    window.requestAnimationFrame(function() {halo(h,t);});
-   /* 
+    //window.requestAnimationFrame(function() {star(s,t);});
+    //window.requestAnimationFrame(function() {halo(h,t);});
+   
     s.style.animation="none";
     h.style.animation="none";
     window.requestAnimationFrame(()=>{
-      
-    });*/
-    h.style.animation="haloFade 1s linear 10"; 
+      s.style.animation="starFade 1s"; 
+      h.style.animation="haloFade 1s"; 
+    });
+    
   }
     
    setInterval(function() {mousemov(star0,halo0);}, 1000);
