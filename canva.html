@@ -26,7 +26,7 @@
   <div><span id ="halo8" class="halo"/></div>
   <div><span id ="halo9" class="halo"/></div>
   <div><span id="cuss" class="cursor"/></div>
-  <div id="screenDiv"><span id="screen" class="screener"/></div>
+  <div id="screen" class="screener"></div>
   
 <script>
   let star0 = document.querySelector("#star0");
@@ -52,10 +52,10 @@
   
   let x = 0;
   let y = 0;  
-  let screen = document.findElementById("#screen);
+  let screen = document.findElementById("screen);
   screen.style.animation= "dark ease-out 4s";
   screen.addEventListener("mousedown", function(e) {
-    document.getElementById('screenDiv').remove();
+    document.getElementById('screen').remove();
   });
   let mouseCursor = document.querySelector("#cuss");
   window.addEventListener("mousemove", function(e) {
