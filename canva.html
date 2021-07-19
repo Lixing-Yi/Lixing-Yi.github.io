@@ -71,7 +71,7 @@
     switch=!switch;*/
   }
  
-   setInterval(mousemov, 1000);/*
+   setInterval(function() {console.log(1);}, 1000);/*
    setTimeout(() => {
      setInterval(function() {mousemov(star1,halo1);}, 1000);
    },100);
