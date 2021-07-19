@@ -99,7 +99,7 @@
 }
 
 .circle {
-  animation: spin 9s linear infinite;
+  animation: spin 9s linear infinite forwards;
 }
 @keyframes spin {
   from {
