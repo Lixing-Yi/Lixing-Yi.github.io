@@ -80,7 +80,7 @@
     });
     
   }
- 
+ mouseCursor.classList.add("shine");//test
    setInterval(function() {mousemov(star0,halo0);}, 1000);
    setTimeout(() => {
      setInterval(function() {mousemov(star1,halo1);}, 1000);
@@ -109,6 +109,7 @@
   setTimeout(() => {
      setInterval(function() {mousemov(star9,halo9);}, 1000);
    },900);
+  mouseCursor.classList.remove("shine");//test
  </script>
 <script>/*
   let mouseCursor = document.querySelector("#cuss");
