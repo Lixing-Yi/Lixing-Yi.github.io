@@ -74,13 +74,12 @@
     h.style.left=x;
     s.style.animation="none";
     h.style.animation="none";
-    window.requestAnimationFrame(()=>{
+    requestAnimationFrame(()=>{
       s.style.animation="starFade 1s linear 1";
       h.style.animation="haloFade 1s linear 1"; 
     });
     
   }
- console.log(1);
    setInterval(function() {mousemov(star0,halo0);}, 1000);
    setTimeout(() => {
      setInterval(function() {mousemov(star1,halo1);}, 1000);
