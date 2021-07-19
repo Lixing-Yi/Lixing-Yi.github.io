@@ -50,11 +50,23 @@
   let halo9 = document.querySelector("#halo9");
   
   let x = 0;
-  let y = 0;
+  let y = 0;  
+  let mouseCursor = document.querySelector("#cuss");
   window.addEventListener("mousemove", function(e) {
     y=e.pageY+"px";
     x=e.pageX+"px";
+    mouseCursor.style.top=y;
+    mouseCursor.style.left=;
   });
+
+  window.addEventListener("mousedown", () => {
+    mouseCursor.classList.add("shine");
+  });
+  
+  window.addEventListener("mouseup", () => {
+    mouseCursor.classList.remove("shine");
+  });
+  
   function mousemov(s,h) {
     s.style.top=y;
     s.style.left=x;
@@ -101,7 +113,7 @@
 <div>
   <span id="cuss" class="cursor"/>
 </div>
-<script>
+<script>/*
   let mouseCursor = document.querySelector("#cuss");
   window.addEventListener("mousemove", function(e) {
     mouseCursor.style.top=e.pageY+"px";
@@ -115,19 +127,6 @@
   window.addEventListener("mouseup", () => {
     mouseCursor.classList.remove("shine");
   });
-  
-  function simulateMouseClick(targetNode) {
-    function triggerMouseEvent(targetNode, eventType) {
-        var clickEvent = document.createEvent('MouseEvents');
-        clickEvent.initEvent(eventType, true, true);
-        targetNode.dispatchEvent(clickEvent);
-    }
-    ["mouseover", "mousedown", "mouseup", "click"].forEach(function(eventType) { 
-        triggerMouseEvent(targetNode, eventType);
-    });
-  }
-  simulateMouseClick(mouseCursor);
-  document.elementFromPoint(20, 20).click();
 </script>
 <div>
   <audio id="music" src="https://lixing-yi.github.io/CLAUDE%20DEBUSSY%20-%20%20CLAIR%20DE%20LUNE%20(mp3cut.net).mp3" loop="true">
