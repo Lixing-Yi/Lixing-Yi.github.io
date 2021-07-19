@@ -141,10 +141,10 @@
     let still = true;
     moonPic.addEventListener("click", () => {
     if(still) {
-      moonPic.style.animationPlayState = "paused";
+      moonPic.style.animationPlayState = "running";
       document.querySelector("#music").play();
     }else{
-      moonPic.style.animationPlayState = "running";
+      moonPic.style.animationPlayState = "paused";
       document.querySelector("#music").pause();
     }
     still = !still;
