@@ -5,6 +5,7 @@
   width: 100%;
   height: 100%;
   animation: dark ease-out 4s;
+  z-index: 3;
 }
 @keyframes dark {
   from {color: rgb(100,180,250)}
