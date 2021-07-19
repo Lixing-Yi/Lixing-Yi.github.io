@@ -72,13 +72,11 @@
     s.style.left=x;
     h.style.top=y;  
     h.style.left=x;
-    s.style.animation="starFade 1s linear 1";
-    h.style.animation="haloFade 1s linear 1";
-    //s.style.animation="none";
-    //h.style.animation="none";
+    s.style.animation="none";
+    h.style.animation="none";
     window.requestAnimationFrame(()=>{
-      s.style.animation="none";
-      h.style.animation="none";
+      s.style.animation="starFade 1s linear 1";
+      h.style.animation="haloFade 1s linear 1"; 
     });
     
   }
