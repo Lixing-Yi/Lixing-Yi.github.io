@@ -6,7 +6,6 @@
   height: 100%;
   color: rgb(100,180,250);
   display: inline-block;
-  animation: dark ease-out 4s;
   z-index: 3;
 }
 @keyframes dark {
