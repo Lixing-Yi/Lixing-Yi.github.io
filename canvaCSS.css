@@ -1,9 +1,10 @@
 .screener {
+  opacity: 1;
+  width: 100px;
+  height: 100px;
   position: fixed;
   top: 0;
   left: 0;
-  width: 100px;
-  height: 100px;
   color: rgb(100,180,250);
   display: inline-block;
   z-index: 3;
