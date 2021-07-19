@@ -85,7 +85,7 @@
     h.style.opacity = 0.6-(0.6*progress/1000);
     h.style.color = rgb(200-Math.round(200*progress/1000),200-Math.round(200*progress/1000),244-Math.round(244*progress/1000));
     if (progress < 1000) {
-      window.requestAnimationFrame(function() {star(s,time);});
+      window.requestAnimationFrame(function() {halo(h,time);});
     }
   }
   
@@ -95,8 +95,8 @@
     s.style.left=x;
     h.style.top=y;  
     h.style.left=x;
-    star(s,t);
-    halo(h,t);
+    window.requestAnimationFrame(function() {star(s,t);});
+    window.requestAnimationFrame(function() {halo(h,t);});
    /* 
     s.style.animation="none";
     h.style.animation="none";
