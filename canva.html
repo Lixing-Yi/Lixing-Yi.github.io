@@ -25,7 +25,7 @@
   <div><span id ="halo7" class="halo"/></div>
   <div><span id ="halo8" class="halo"/></div>
   <div><span id ="halo9" class="halo"/></div>
-  
+  <div><span id="cuss" class="cursor"/></div>
   
 <script>
   let star0 = document.querySelector("#star0");
@@ -56,7 +56,7 @@
     y=e.pageY+"px";
     x=e.pageX+"px";
     mouseCursor.style.top=y;
-    mouseCursor.style.left=;
+    mouseCursor.style.left=x;
   });
 
   window.addEventListener("mousedown", () => {
@@ -110,9 +110,6 @@
      setInterval(function() {mousemov(star9,halo9);}, 1000);
    },900);
  </script>
-<div>
-  <span id="cuss" class="cursor"/>
-</div>
 <script>/*
   let mouseCursor = document.querySelector("#cuss");
   window.addEventListener("mousemove", function(e) {
