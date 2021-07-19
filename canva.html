@@ -71,14 +71,18 @@
     s.style.top=y;
     s.style.left=x;
     h.style.top=y;  
-    h.style.left=x;
+    h.style.left=x;/* This works
     s.style.animation="none";
     h.style.animation="none";
     window.requestAnimationFrame(()=>{
       s.style.animation="starFade 1s linear 1";
       h.style.animation="haloFade 1s linear 1"; 
+    });*/
+    var ani = requestAnimationFrame(function() {
+      s.style.animation="starFade 1s linear 1";
+      h.style.animation="haloFade 1s linear 1"; 
     });
-    
+    cancelAnimationFrame(ani);
   }
    setInterval(function() {mousemov(star0,halo0);}, 1000);
    setTimeout(() => {
