@@ -2,16 +2,16 @@
   opacity: 1;
   width: 100px;
   height: 100px;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
-  color: rgb(100,180,250);
+  background-color: rgb(100,180,250);
   display: inline-block;
   z-index: 3;
 }
 @keyframes dark {
-  from {color: rgb(100,180,250);}
-  to {color: rgb(0,0,0);}
+  from {background-color: rgb(100,180,250);}
+  to {background-color: rgb(0,0,0);}
 }
 
 .cursor {
