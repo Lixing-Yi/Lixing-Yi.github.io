@@ -51,7 +51,6 @@
   
   let x = 0;
   let y = 0;
-  let swit=true;// can't use switch as name lol
   window.addEventListener("mousemove", function(e) {
     y=e.pageY+"px";
     x=e.pageX+"px";
@@ -61,14 +60,12 @@
     s.style.left=x;
     h.style.top=y;  
     h.style.left=x;
-    if(swit){ //Damned animation won't trigger twice, had to switch
+    s.style.animation="none";
+    h.style.animation="none";
+    window.requestAnimationFrame(function(){
       s.style.animation="starFade 1s linear 1";
       h.style.animation="haloFade 1s linear 1";
-    }else{
-      s.style.animation="starFadeS 1s linear 1";
-      h.style.animation="haloFadeS 1s linear 1";
-    }
-    swit=!swit;
+    });
   }
  
    setInterval(function() {mousemov(star0,halo0);}, 1000);
