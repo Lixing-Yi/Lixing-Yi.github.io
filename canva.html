@@ -26,7 +26,13 @@
   <div><span id ="halo8" class="halo"/></div>
   <div><span id ="halo9" class="halo"/></div>
   <div><span id="cuss" class="cursor"/></div>
-  <div id="screen" class="screener"></div>
+  <div id="screen" class="screener">
+  <span style="text-align:center; font-size:70px; font-family: 'Brush Script MT', cursive;
+               background: -webkit-linear-gradient(rgb(255, 230, 110), rgb(255, 255, 255));
+               -webkit-background-clip: text;-webkit-text-fill-color: transparent;">Lights out!</span>
+  <span style="text-align:center; font-size:30px; font-family: 'Brush Script MT', cursive;
+               color: rgb(220, 220, 220);">(where is your cursor?)</span>
+  </div>
   
 <script>
   let star0 = document.querySelector("#star0");
@@ -72,43 +78,19 @@
   window.addEventListener("mouseup", () => {
     mouseCursor.classList.remove("shine");
   });
-  /*
-  //手写动画我容易吗 css animation FU Edit: 还tm没有用
-  function star(s,time) {
-    var progress = Date.now()-time;
-    s.style.height = 20-Math.round(20*progress/1000) + "px";
-    s.style.width = 20-Math.round(20*progress/1000) + "px";
-    s.style.opacity = 0.6+(0.4*progress/1000);
-    s.style.color = rgb(200+Math.round(55*progress/1000),200+Math.round(55*progress/1000),244+Math.round(11*progress/1000));
-    if (progress < 1000) {
-      window.requestAnimationFrame(function() {star(s,time);});
-    }
-  }
-  function halo(h,time) {
-    var progress = Date.now()-time;
-    h.style.height = 20+Math.round(20*progress/1000) + "px";
-    h.style.width = 20+Math.round(20*progress/1000) + "px";
-    h.style.opacity = 0.6-(0.6*progress/1000);
-    h.style.color = rgb(200-Math.round(200*progress/1000),200-Math.round(200*progress/1000),244-Math.round(244*progress/1000));
-    if (progress < 1000) {
-      window.requestAnimationFrame(function() {halo(h,time);});
-    }
-  }
-  */
+
   function mousemov(s,h) {
     var t=Date.now();
     s.style.top=y;
     s.style.left=x;
     h.style.top=y;  
     h.style.left=x;
-    //window.requestAnimationFrame(function() {star(s,t);});
-    //window.requestAnimationFrame(function() {halo(h,t);});
    
     s.style.animation="none";
     h.style.animation="none";
     window.requestAnimationFrame(()=>{
-      s.style.animation="starFade 1s"; 
-      h.style.animation="haloFade 1s"; 
+      s.style.animation="starFade 1s linear"; 
+      h.style.animation="haloFade 1s linear"; 
     });
     
   }
@@ -142,21 +124,6 @@
      setInterval(function() {mousemov(star9,halo9);}, 1000);
    },900);
  </script>
-<script>/*
-  let mouseCursor = document.querySelector("#cuss");
-  window.addEventListener("mousemove", function(e) {
-    mouseCursor.style.top=e.pageY+"px";
-    mouseCursor.style.left=e.pageX+"px";
-  });
-  
-  window.addEventListener("mousedown", () => {
-    mouseCursor.classList.add("shine");
-  });
-  
-  window.addEventListener("mouseup", () => {
-    mouseCursor.classList.remove("shine");
-  });*/
-</script>
 <div>
   <audio id="music" src="https://lixing-yi.github.io/CLAUDE%20DEBUSSY%20-%20%20CLAIR%20DE%20LUNE%20(mp3cut.net).mp3" loop="true">
   <p>If you are reading this, it is because your browser does not support the audio element.</p>
