@@ -66,34 +66,43 @@
   window.addEventListener("mouseup", () => {
     mouseCursor.classList.remove("shine");
   });*/
-  /*
+  
   //手写动画我容易吗 css animation FU
   function star(s,time) {
     var progress = Date.now()-time;
-    s.style.height = 10-Math.round(progress/100) + "px";
-    s.style.width = 10-Math.round(progress/100) + "px";
+    s.style.height = 20-Math.round(20*progress/1000) + "px";
+    s.style.width = 20-Math.round(20*progress/1000) + "px";
     s.style.opacity = 0.6+(0.4*progress/1000);
     s.style.color = rgb(200+Math.round(55*progress/1000),200+Math.round(55*progress/1000),244+Math.round(11*progress/1000));
     if (progress < 1000) {
       window.requestAnimationFrame(function() {star(s,time);});
     }
-  }*/
+  }
+  function halo(h,time) {
+    var progress = Date.now()-time;
+    h.style.height = 20+Math.round(20*progress/1000) + "px";
+    h.style.width = 20+Math.round(20*progress/1000) + "px";
+    h.style.opacity = 0.6-(0.6*progress/1000);
+    h.style.color = rgb(200-Math.round(200*progress/1000),200-Math.round(200*progress/1000),244-Math.round(244*progress/1000));
+    if (progress < 1000) {
+      window.requestAnimationFrame(function() {star(s,time);});
+    }
+  }
   
   function mousemov(s,h) {
+    var t=Date.now();
     s.style.top=y;
     s.style.left=x;
     h.style.top=y;  
     h.style.left=x;
-  /*  
-  var t=Date.now();
-  star(s,t);*/
+    star(s,t);
+    halo(h,t);
    /* 
     s.style.animation="none";
     h.style.animation="none";
     window.requestAnimationFrame(()=>{
       
     });*/
-    s.style.animation="starFade 1s linear 10";
     h.style.animation="haloFade 1s linear 10"; 
   }
     
