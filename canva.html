@@ -26,6 +26,7 @@
   <div><span id ="halo8" class="halo"/></div>
   <div><span id ="halo9" class="halo"/></div>
   <div><span id="cuss" class="cursor"/></div>
+  <div><span id="screen" class="screener"/></div>
   
 <script>
   let star0 = document.querySelector("#star0");
@@ -51,6 +52,10 @@
   
   let x = 0;
   let y = 0;  
+  let screen = document.querySelector("#screen);
+  window.addEventListener("click", function(e) {
+    screen.remove();
+  });
   let mouseCursor = document.querySelector("#cuss");
   window.addEventListener("mousemove", function(e) {
     y=e.pageY+"px";
