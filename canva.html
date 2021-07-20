@@ -2,150 +2,7 @@
 <html>
 <head>
 <!--<script type="text/javascript" scr="https://lixing-yi.github.io/canvaJS.js"></script>-->
-<script>/*
-  let star0 = document.querySelector("#star0");
-  let star1 = document.querySelector("#star1");
-  let star2 = document.querySelector("#star2");
-  let star3 = document.querySelector("#star3");
-  let star4 = document.querySelector("#star4");
-  let star5 = document.querySelector("#star5");
-  let star6 = document.querySelector("#star6");
-  let star7 = document.querySelector("#star7");
-  let star8 = document.querySelector("#star8");
-  let star9 = document.querySelector("#star9");
-  let halo0 = document.querySelector("#halo0");
-  let halo1 = document.querySelector("#halo1");
-  let halo2 = document.querySelector("#halo2");
-  let halo3 = document.querySelector("#halo3");
-  let halo4 = document.querySelector("#halo4");
-  let halo5 = document.querySelector("#halo5");
-  let halo6 = document.querySelector("#halo6");
-  let halo7 = document.querySelector("#halo7");
-  let halo8 = document.querySelector("#halo8");
-  let halo9 = document.querySelector("#halo9");
-//had to use this to trigger a click, since window.requestanimationframe won't work properly otherwise  
-  let screen = document.getElementById("screen");
-  screen.style.animation= "dark ease-out 4s forwards";
-  screen.addEventListener("mousedown", function(e) {
-    document.getElementById('screen').remove();
-  });
-//coordinates
-  let x = 0;
-  let y = 0;  
-  let mouseCursor = document.querySelector("#cuss");
-  window.addEventListener("mousemove", function(e) {
-    y=e.pageY+"px";
-    x=e.pageX+"px";
-    mouseCursor.style.top=y;
-    mouseCursor.style.left=x;
-  });
-
-  window.addEventListener("mousedown", () => {
-    mouseCursor.classList.add("shine");
-  });
-  
-  window.addEventListener("mouseup", () => {
-    mouseCursor.classList.remove("shine");
-  });
-
-  function mousemov(s,h) {
-    var t=Date.now();
-    s.style.top=y;
-    s.style.left=x;
-    h.style.top=y;  
-    h.style.left=x;
-   
-    s.style.animation="none";
-    h.style.animation="none";
-    window.requestAnimationFrame(()=>{
-      s.style.animation="starFade 1s linear"; 
-      h.style.animation="haloFade 1s linear"; 
-    });
-  }
-  //the music player
-    let moonPic = document.querySelector("#moon");
-    let still = true;
-    moonPic.classList.add("circle");
-    moonPic.style.animationPlayState = "paused";
-    moonPic.addEventListener("click", () => {
-    if(still) {
-      moonPic.style.animationPlayState = "running";
-      document.querySelector("#music").play();
-    }else{
-      moonPic.style.animationPlayState = "paused";
-      document.querySelector("#music").pause();
-    }
-    still = !still;
-  });
-// the comic effects
-   setInterval(function() {mousemov(star0,halo0);}, 1000);
-   setTimeout(() => {
-     setInterval(function() {mousemov(star1,halo1);}, 1000);
-   },100);
-  setTimeout(() => {
-     setInterval(function() {mousemov(star2,halo2);}, 1000);
-   },200);
-  setTimeout(() => {
-     setInterval(function() {mousemov(star3,halo3);}, 1000);
-   },300);
-  setTimeout(() => {
-     setInterval(function() {mousemov(star4,halo4);}, 1000);
-   },400);
-  setTimeout(() => {
-     setInterval(function() {mousemov(star5,halo5);}, 1000);
-   },500);
-  setTimeout(() => {
-     setInterval(function() {mousemov(star6,halo6);}, 1000);
-   },600);
-  setTimeout(() => {
-     setInterval(function() {mousemov(star7,halo7);}, 1000);
-   },700);
-  setTimeout(() => {
-     setInterval(function() {mousemov(star8,halo8);}, 1000);
-   },800);
-  setTimeout(() => {
-     setInterval(function() {mousemov(star9,halo9);}, 1000);
-   },900);*/
-</script>
-<link href="https://lixing-yi.github.io/canvaCSS.css" rel="stylesheet"/>
-</head>
-<body>
-
-  <div><span id ="star0" class="star"/></div>
-  <div><span id ="star1" class="star"/></div>
-  <div><span id ="star2" class="star"/></div>
-  <div><span id ="star3" class="star"/></div>
-  <div><span id ="star4" class="star"/></div>
-  <div><span id ="star5" class="star"/></div>
-  <div><span id ="star6" class="star"/></div>
-  <div><span id ="star7" class="star"/></div>
-  <div><span id ="star8" class="star"/></div>
-  <div><span id ="star9" class="star"/></div>
-  <div><span id ="halo0" class="halo"/></div>
-  <div><span id ="halo1" class="halo"/></div>
-  <div><span id ="halo2" class="halo"/></div>
-  <div><span id ="halo3" class="halo"/></div>
-  <div><span id ="halo4" class="halo"/></div>
-  <div><span id ="halo5" class="halo"/></div>
-  <div><span id ="halo6" class="halo"/></div>
-  <div><span id ="halo7" class="halo"/></div>
-  <div><span id ="halo8" class="halo"/></div>
-  <div><span id ="halo9" class="halo"/></div>
-  <div><span id="cuss" class="cursor"/></div>
-  <div id="screen" class="screener">
-  <span style="position: fixed;left:50%;top:15%;transform: translate(-50%, 0);
-               text-align:center; font-size:80px; font-family: 'Brush Script MT', cursive;
-               background: -webkit-linear-gradient(rgb(255, 230, 110), rgb(255, 255, 255));
-               -webkit-background-clip: text;-webkit-text-fill-color: transparent;">Lights out!</span>
-  <span style="position: fixed;left:50%;top:45%;transform: translate(-50%, 0);
-               text-align:center; font-size:30px; font-family: 'Brush Script MT', cursive;
-               color: rgb(220, 220, 220);">(where is your cursor?)</span>
-  <span style="position: fixed;left:50%;top:55%;transform: translate(-50%, 0);
-           text-align:center; font-size:22px; font-family: 'Brush Script MT', cursive;
-           color: rgb(220, 220, 220);">&#8593 click screen to find out &#8593</span>
-  </div>
-  
-<script> 
+<script>
   let star0 = document.querySelector("#star0");
   let star1 = document.querySelector("#star1");
   let star2 = document.querySelector("#star2");
@@ -234,17 +91,7 @@
   setTimeout(() => {
      setInterval(function() {mousemov(star9,halo9);}, 1000);
    },900);
- </script>
-<div>
-  <audio id="music" src="https://lixing-yi.github.io/CLAUDE%20DEBUSSY%20-%20%20CLAIR%20DE%20LUNE%20(mp3cut.net).mp3" loop="true">
-  <p>If you are reading this, it is because your browser does not support the audio element.</p>
-  </audio>
-</div>
-<div>
-  <img id="moon" src="https://lixing-yi.github.io/moon.png" alt="moon" width="70" height="70" style="position: absolute; right: 10%; top: 10%;z-index: 1;">
-</div>
- <script> 
-    var moonPic = document.getElementById("moon");
+  var moonPic = document.getElementById("moon");
     var still = true;
     moonPic.classList.add("circle");
     moonPic.style.animationPlayState = "paused";
@@ -258,6 +105,159 @@
     }
     still = !still;
   });
+  
+</script>
+<link href="https://lixing-yi.github.io/canvaCSS.css" rel="stylesheet"/>
+</head>
+<body>
+
+  <div><span id ="star0" class="star"/></div>
+  <div><span id ="star1" class="star"/></div>
+  <div><span id ="star2" class="star"/></div>
+  <div><span id ="star3" class="star"/></div>
+  <div><span id ="star4" class="star"/></div>
+  <div><span id ="star5" class="star"/></div>
+  <div><span id ="star6" class="star"/></div>
+  <div><span id ="star7" class="star"/></div>
+  <div><span id ="star8" class="star"/></div>
+  <div><span id ="star9" class="star"/></div>
+  <div><span id ="halo0" class="halo"/></div>
+  <div><span id ="halo1" class="halo"/></div>
+  <div><span id ="halo2" class="halo"/></div>
+  <div><span id ="halo3" class="halo"/></div>
+  <div><span id ="halo4" class="halo"/></div>
+  <div><span id ="halo5" class="halo"/></div>
+  <div><span id ="halo6" class="halo"/></div>
+  <div><span id ="halo7" class="halo"/></div>
+  <div><span id ="halo8" class="halo"/></div>
+  <div><span id ="halo9" class="halo"/></div>
+  <div><span id="cuss" class="cursor"/></div>
+  <div id="screen" class="screener">
+  <span style="position: fixed;left:50%;top:15%;transform: translate(-50%, 0);
+               text-align:center; font-size:80px; font-family: 'Brush Script MT', cursive;
+               background: -webkit-linear-gradient(rgb(255, 230, 110), rgb(255, 255, 255));
+               -webkit-background-clip: text;-webkit-text-fill-color: transparent;">Lights out!</span>
+  <span style="position: fixed;left:50%;top:45%;transform: translate(-50%, 0);
+               text-align:center; font-size:30px; font-family: 'Brush Script MT', cursive;
+               color: rgb(220, 220, 220);">(where is your cursor?)</span>
+  <span style="position: fixed;left:50%;top:55%;transform: translate(-50%, 0);
+           text-align:center; font-size:22px; font-family: 'Brush Script MT', cursive;
+           color: rgb(220, 220, 220);">&#8593 click screen to find out &#8593</span>
+  </div>
+  
+<script> /*
+  let star0 = document.querySelector("#star0");
+  let star1 = document.querySelector("#star1");
+  let star2 = document.querySelector("#star2");
+  let star3 = document.querySelector("#star3");
+  let star4 = document.querySelector("#star4");
+  let star5 = document.querySelector("#star5");
+  let star6 = document.querySelector("#star6");
+  let star7 = document.querySelector("#star7");
+  let star8 = document.querySelector("#star8");
+  let star9 = document.querySelector("#star9");
+  let halo0 = document.querySelector("#halo0");
+  let halo1 = document.querySelector("#halo1");
+  let halo2 = document.querySelector("#halo2");
+  let halo3 = document.querySelector("#halo3");
+  let halo4 = document.querySelector("#halo4");
+  let halo5 = document.querySelector("#halo5");
+  let halo6 = document.querySelector("#halo6");
+  let halo7 = document.querySelector("#halo7");
+  let halo8 = document.querySelector("#halo8");
+  let halo9 = document.querySelector("#halo9");
+  
+  let x = 0;
+  let y = 0;  
+  let screen = document.getElementById("screen");
+  screen.style.animation= "dark ease-out 4s forwards";
+  screen.addEventListener("mousedown", function(e) {
+    document.getElementById('screen').remove();
+  });
+  let mouseCursor = document.querySelector("#cuss");
+  window.addEventListener("mousemove", function(e) {
+    y=e.pageY+"px";
+    x=e.pageX+"px";
+    mouseCursor.style.top=y;
+    mouseCursor.style.left=x;
+  });
+
+  window.addEventListener("mousedown", () => {
+    mouseCursor.classList.add("shine");
+  });
+  
+  window.addEventListener("mouseup", () => {
+    mouseCursor.classList.remove("shine");
+  });
+
+  function mousemov(s,h) {
+    var t=Date.now();
+    s.style.top=y;
+    s.style.left=x;
+    h.style.top=y;  
+    h.style.left=x;
+   
+    s.style.animation="none";
+    h.style.animation="none";
+    window.requestAnimationFrame(()=>{
+      s.style.animation="starFade 1s linear"; 
+      h.style.animation="haloFade 1s linear"; 
+    });
+    
+  }
+    
+   setInterval(function() {mousemov(star0,halo0);}, 1000);
+   setTimeout(() => {
+     setInterval(function() {mousemov(star1,halo1);}, 1000);
+   },100);
+  setTimeout(() => {
+     setInterval(function() {mousemov(star2,halo2);}, 1000);
+   },200);
+  setTimeout(() => {
+     setInterval(function() {mousemov(star3,halo3);}, 1000);
+   },300);
+  setTimeout(() => {
+     setInterval(function() {mousemov(star4,halo4);}, 1000);
+   },400);
+  setTimeout(() => {
+     setInterval(function() {mousemov(star5,halo5);}, 1000);
+   },500);
+  setTimeout(() => {
+     setInterval(function() {mousemov(star6,halo6);}, 1000);
+   },600);
+  setTimeout(() => {
+     setInterval(function() {mousemov(star7,halo7);}, 1000);
+   },700);
+  setTimeout(() => {
+     setInterval(function() {mousemov(star8,halo8);}, 1000);
+   },800);
+  setTimeout(() => {
+     setInterval(function() {mousemov(star9,halo9);}, 1000);
+   },900);*/
+ </script>
+<div>
+  <audio id="music" src="https://lixing-yi.github.io/CLAUDE%20DEBUSSY%20-%20%20CLAIR%20DE%20LUNE%20(mp3cut.net).mp3" loop="true">
+  <p>If you are reading this, it is because your browser does not support the audio element.</p>
+  </audio>
+</div>
+<div>
+  <img id="moon" src="https://lixing-yi.github.io/moon.png" alt="moon" width="70" height="70" style="position: absolute; right: 10%; top: 10%;z-index: 1;">
+</div>
+ <script> /*
+    var moonPic = document.getElementById("moon");
+    var still = true;
+    moonPic.classList.add("circle");
+    moonPic.style.animationPlayState = "paused";
+    moonPic.addEventListener("click", () => {
+    if(still) {
+      moonPic.style.animationPlayState = "running";
+      document.querySelector("#music").play();
+    }else{
+      moonPic.style.animationPlayState = "paused";
+      document.querySelector("#music").pause();
+    }
+    still = !still;
+  });*/
 </script>
 </body>
 </html>
