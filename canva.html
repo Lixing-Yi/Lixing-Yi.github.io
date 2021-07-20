@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script type="text/javascript" scr="https://lixing-yi.github.io/canvaJS.js"></script>
 <link href="https://lixing-yi.github.io/canvaCSS.css" rel="stylesheet"/>
 </head>
 <body>
@@ -40,7 +39,7 @@
            color: rgb(220, 220, 220);">&#8593 click screen to find out &#8593</span>
   </div>
   
-<script> /*
+<script> 
   let star0 = document.querySelector("#star0");
   let star1 = document.querySelector("#star1");
   let star2 = document.querySelector("#star2");
@@ -63,14 +62,14 @@
   let halo9 = document.querySelector("#halo9");
   
   let x = 0;
-  let y = 0;  */
+  let y = 0;  
   //had to use this to trigger a click, since window.requestanimationframe won't work properly otherwise  
   let screen = document.getElementById("screen");
   screen.style.animation= "dark ease-out 4s forwards";
   screen.addEventListener("mousedown", function(e) {
     document.getElementById('screen').remove();
   });
-  /*
+  
   let mouseCursor = document.querySelector("#cuss");
   window.addEventListener("mousemove", function(e) {
     y=e.pageY+"px";
@@ -130,7 +129,7 @@
    },800);
   setTimeout(() => {
      setInterval(function() {mousemov(star9,halo9);}, 1000);
-   },900);*/
+   },900);
  </script>
 <div>
   <audio id="music" src="https://lixing-yi.github.io/CLAUDE%20DEBUSSY%20-%20%20CLAIR%20DE%20LUNE%20(mp3cut.net).mp3" loop="true">
@@ -140,7 +139,7 @@
 <div>
   <img id="moon" src="https://lixing-yi.github.io/moon.png" alt="moon" width="70" height="70" style="position: absolute; right: 10%; top: 10%;z-index: 1;">
 </div>
- <script> /*
+ <script> 
     var moonPic = document.getElementById("moon");
     var still = true;
     moonPic.classList.add("circle");
@@ -154,7 +153,7 @@
       document.querySelector("#music").pause();
     }
     still = !still;
-  });*/
+  });
 </script>
 </body>
 </html>
