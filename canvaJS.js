@@ -1,3 +1,4 @@
+window.onload = function() {  
   let star0 = document.querySelector("#star0");
   let star1 = document.querySelector("#star1");
   let star2 = document.querySelector("#star2");
@@ -18,12 +19,12 @@
   let halo7 = document.querySelector("#halo7");
   let halo8 = document.querySelector("#halo8");
   let halo9 = document.querySelector("#halo9");
-//had to use this to trigger a click, since window.requestanimationframe won't work properly otherwise  
+/*
   let screen = document.getElementById("screen");
   screen.style.animation= "dark ease-out 4s forwards";
   screen.addEventListener("mousedown", function(e) {
     document.getElementById('screen').remove();
-  });
+  });*/
 //coordinates
   let x = 0;
   let y = 0;  
@@ -57,21 +58,7 @@
       h.style.animation="haloFade 1s linear"; 
     });
   }
-  //the music player
-    let moonPic = document.querySelector("#moon");
-    let still = true;
-    moonPic.classList.add("circle");
-    moonPic.style.animationPlayState = "paused";
-    moonPic.addEventListener("click", () => {
-    if(still) {
-      moonPic.style.animationPlayState = "running";
-      document.querySelector("#music").play();
-    }else{
-      moonPic.style.animationPlayState = "paused";
-      document.querySelector("#music").pause();
-    }
-    still = !still;
-  });
+
 // the comic effects
    setInterval(function() {mousemov(star0,halo0);}, 1000);
    setTimeout(() => {
@@ -101,3 +88,19 @@
   setTimeout(() => {
      setInterval(function() {mousemov(star9,halo9);}, 1000);
    },900);
+  //the music player
+    let moonPic = document.querySelector("#moon");
+    let still = true;
+    moonPic.classList.add("circle");
+    moonPic.style.animationPlayState = "paused";
+    moonPic.addEventListener("click", () => {
+    if(still) {
+      moonPic.style.animationPlayState = "running";
+      document.querySelector("#music").play();
+    }else{
+      moonPic.style.animationPlayState = "paused";
+      document.querySelector("#music").pause();
+    }
+    still = !still;
+  });
+}
