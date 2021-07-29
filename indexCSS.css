@@ -17,4 +17,5 @@
       height: 80px;
       border-radius: 50%;
       background-color: #ef8e38;
+      transform: translate(-20%, 20%);
     }
