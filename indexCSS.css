@@ -10,7 +10,7 @@
   background-image: linear-gradient(black, rgb(30, 30, 20));
 }
 .dayheader {
-  background-image: linear-gradient(lightblue 75%, rgb(250, 220, 110));
+  background-image: linear-gradient(#73c8a9 75%, #ffd194);
 }
  .sun {
       width: 80px;
